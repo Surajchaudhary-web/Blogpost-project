@@ -53,4 +53,4 @@ class CommentViewSet(viewsets.ModelViewSet):
     queryset = Comment.objects.all().order_by('-created_at')
     serializer_class = CommentSerializer
     # Optional: add pagination for comments
-    # pagination_class = SmallPagePagination
+    pagination_class = SmallPagePagination
